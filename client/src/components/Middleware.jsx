@@ -10,7 +10,7 @@ const Middleware = () => {
     useEffect(() => {
         const fetchData = async () => {
           try {
-            const response = await fetch('http://localhost:3001/users');
+            const response = await fetch(import.meta.env.VITE_DB_URL+ "/users");
             const data = await response.json();
             setUsers(data);
           } catch (error) {

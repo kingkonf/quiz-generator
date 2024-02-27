@@ -1,22 +1,17 @@
 const express = require('express')
 const mongoose = require('mongoose');
 const cors = require('cors');
+require("dotenv").config()
 const app = express();
-
-
 
 // models whcih we use here
 // const Username = require("./models/Username");
 const quizmodel = require("./models/Quizmodel");
 
-mongoose.connect("mongodb://127.0.0.1:27017/quizgenerator");
+mongoose.connect(process.env.MONGODB_URI);
 
 
-app.use(cors({
-    origin: ['http://localhost:3001', 'http://localhost:5173'],
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    credentials: true
-}));
+app.use(cors());
 
 app.use(express.json());
 

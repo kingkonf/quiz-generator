@@ -54,7 +54,7 @@ const Quiz = () => {
     }));
 
     // Send data to the backend
-    axios.post('http://localhost:3001/users', {
+    axios.post(import.meta.env.VITE_DB_URL + "/users", {
       username,
       email,
       resultstatus: `${newScore} out of ${data.length}`,
