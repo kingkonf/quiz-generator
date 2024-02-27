@@ -62,3 +62,6 @@ app.post('/users', (req, res) => {
 app.listen(3001, () => {
     console.log("server is running");
 });
+
+// Export the Express API
+module.exports = app;
