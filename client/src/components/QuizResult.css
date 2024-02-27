@@ -1,0 +1,52 @@
+.result-container {
+    max-width: 600px;
+    margin: auto;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .result-container h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .result-container p {
+    margin: 5px 0;
+  }
+  
+  .score-info {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .percentage {
+    color: #007bff;
+  }
+  
+  .pass {
+    color: green;
+  }
+  
+  .fail {
+    color: red;
+  }
+  
+  .question-result {
+    margin-top: 20px;
+  }
+  
+  .question-result p {
+    margin: 5px 0;
+  }
+  
+  .correct {
+    color: green;
+  }
+  
+  .incorrect {
+    color: red;
+  }
+  

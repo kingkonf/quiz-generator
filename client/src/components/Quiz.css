@@ -1,0 +1,113 @@
+
+  .quiz-container {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .question-container {
+    margin-bottom: 20px;
+    
+  }
+  
+  .question {
+    color: white;
+  }
+  
+  .options {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .option {
+    margin-bottom: 10px;
+  }
+  
+  .radio:checked + label {
+    background-color: green;
+  }
+  
+  input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  label {
+    color: white;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  label:hover {
+       background-color: rgb(161, 240, 161);
+
+  }
+  
+  button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+  .option.selected {
+    background-color: rgb(161, 240, 161);
+  }
+  
+  .result-container {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .result-container h2 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .result-container p {
+    margin: 5px 0;
+  }
+  
+  
+  
+.form{
+    justify-content: center;
+    margin-top: 40px; 
+    margin-left: 20%;
+    height: 130px;  
+}
+
+.userid,.emailid {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .userid:focus,
+  .emailid:focus {
+    border-color: #999;
+    outline: none; /* Remove default outline on focus */
+  }
+  .submit{
+    margin-top: 5%;
+    text-align: center;
+    justify-content: center;
+    margin-left: 40%;
+    margin-bottom: 5%;
+
+  }
+  
